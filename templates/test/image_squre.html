@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container {
+            width: 200px;
+            /* 容器宽度，可以根据需要调整 */
+            height: 200px;
+            /* 容器高度，确保与宽度相同以保持正方形 */
+            overflow: hidden;
+            /* 隐藏超出容器的内容 */
+        }
+
+        .square-image {
+            position: relative;
+            width: 100%;
+            /* 图片宽度与容器相同 */
+            height: auto;
+            top: -50%;
+            /* 高度自动，保持图片的原始宽高比 */
+            object-fit: cover;
+            /* 覆盖整个容器，裁剪掉多余的部分 */
+            display: block;
+            /* 防止图片下方出现空隙 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="./images/bi-girl01.jpg" alt="描述性文本" class="square-image">
+    </div>
+
+</body>
+
+</html>

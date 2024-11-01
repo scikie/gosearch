@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Upload Form</title>
+<link rel="stylesheet" href="./upphoto.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="photo-upload-form" action="/photos/upload" method="post">
+      <h2>上传照片</h2>
+      
+      <!-- 文件输入 -->
+      <label for="file-input">选择照片:</label>
+      <input type="file" id="file-input" name="photo" accept="image/*" required>
+      
+      <!-- 相册选择 -->
+      <label for="album-select">选择相册:</label>
+      <select id="album-select" name="album">
+        <option value="album1">相册1</option>
+        <option value="album2">相册2</option>
+        <option value="album3">相册3</option>
+      </select>
+      
+      <!-- 照片名称 -->
+      <label for="photo-name">照片名称:</label>
+      <input type="text" id="photo-name" name="photo_name" required>
+      
+      <!-- 照片描述 -->
+      <label for="photo-description">照片描述:</label>
+      <textarea id="photo-description" name="photo_description"></textarea>
+      
+      <!-- 公开/私密选择 -->
+      <fieldset>
+        <legend>公开状态:</legend>
+        <label>
+          <input type="radio" name="privacy" value="public" checked> 公开
+        </label>
+        <label>
+          <input type="radio" name="privacy" value="private"> 私密
+        </label>
+      </fieldset>
+      
+      <!-- 提交按钮 -->
+      <button type="submit">上传照片</button>
+    </form>
+  </div>
+</body>
+</html>

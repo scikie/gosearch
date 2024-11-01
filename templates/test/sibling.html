@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 基本样式 */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 在屏幕宽度小于600px时应用的样式 */
+        @media screen and (max-width: 600px) {
+            .container {
+                background-color: lightblue;
+                font-size: 14px;
+            }
+        }
+
+        /* 在屏幕宽度在600px到900px之间时应用的样式 */
+        @media screen and (min-width: 600px) and (max-width: 900px) {
+            .container {
+                background-color: lightgreen;
+                font-size: 16px;
+            }
+        }
+
+        /* 在屏幕宽度大于900px时应用的样式 */
+        @media screen and (min-width: 900px) {
+            .container {
+                background-color: lightcoral;
+                font-size: 18px;
+            }
+        }
+
+        p~span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>这是一个响应式设计示例。根据屏幕宽度，容器的背景颜色和字体大小会改变。</p>
+        <div>
+            <p>这是一个段落。</p>
+            <span>这是一个 span 元素。</span>
+            <div>这是一个 div 元素。</div>
+            <span>这是另一个 span 元素。</span>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

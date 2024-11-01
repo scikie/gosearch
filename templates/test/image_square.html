@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-container {
+            width: 200px;
+            /* 正方形裁剪的尺寸 */
+            height: 200px;
+            /* 正方形裁剪的尺寸 */
+            background-image: url('./images/bi-girl01.jpg');
+            /* 设置背景图片 */
+            background-position: center;
+            /* 将背景图片居中 */
+            background-repeat: no-repeat;
+            /* 防止背景图片重复 */
+            background-size: cover;
+            /* 覆盖整个容器，保持宽高比，裁剪多余部分 */
+            overflow: hidden;
+            /* 确保内容不会溢出容器 */
+            display: inline-block;
+            /* 或者设置为block，根据布局需要 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <!-- 容器内不需要放置img标签 -->
+    </div>
+
+
+</body>
+
+</html>
